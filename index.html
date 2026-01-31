@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+
+
+<html lang="vi">
+
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+
+    <title>Giới thiệu lớp 12A1</title>
+
+
+
+
+
+    <style>
+
+
+        body {
+
+
+            font-family: Arial, sans-serif;
+
+
+            background-color: #f4f6f8;
+
+
+            margin: 0;
+
+
+            text-align: center;
+
+
+        }
+
+
+
+
+
+        /* MENU */
+
+
+        .menu {
+
+
+            background-color: #2c7be5;
+
+
+            padding: 12px;
+
+
+            position: sticky;
+
+
+            top: 0;
+
+
+        }
+
+
+
+
+
+        .menu a {
+
+
+            color: white;
+
+
+            margin: 15px;
+
+
+            text-decoration: none;
+
+
+            font-weight: bold;
+
+
+        }
+
+
+
+
+
+        .menu a:hover {
+
+
+            text-decoration: underline;
+
+
+        }
+
+
+
+
+
+        /* PHẦN CHUNG */
+
+
+        section {
+
+
+            padding: 40px 20px;
+
+
+        }
+
+
+
+
+
+        h1, h2 {
+
+
+            color: #2c7be5;
+
+
+        }
+
+
+
+
+
+        .slogan {
+
+
+            font-style: italic;
+
+
+            color: #555;
+
+
+        }
+
+
+
+
+
+        /* ẢNH */
+
+
+        img {
+
+
+            max-width: 300px;
+
+
+            border-radius: 10px;
+
+
+            margin: 15px 0;
+
+
+        }
+
+
+
+
+
+        /* THÀNH VIÊN */
+
+
+        .member {
+
+
+            display: inline-block;
+
+
+            margin: 15px;
+
+
+            width: 150px;
+
+
+        }
+
+
+
+
+
+        .member img {
+
+
+            width: 120px;
+
+
+            height: 120px;
+
+
+            border-radius: 50%;
+
+
+        }
+
+
+
+
+
+        /* HOẠT ĐỘNG */
+
+
+        ul {
+
+
+            list-style-type: none;
+
+
+            padding: 0;
+
+
+        }
+
+
+
+
+
+        li {
+
+
+            margin: 10px 0;
+
+
+        }
+
+
+
+
+
+<a onclick="showPage('media')">Audio & Video</a>
+
+
+<div class="menu">
+
+
+
+
+
+
+
+
+/* ===== Footer Thông Tin Liên Hệ ===== */
+
+
+.contact-footer {
+
+
+  background-color: #222;
+
+
+  color: #fff;
+
+
+  padding: 25px 15px;
+
+
+  text-align: center;
+
+
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+
+
+}
+
+
+
+
+
+.contact-footer .contact-content h3 {
+
+
+  font-size: 22px;
+
+
+  margin-bottom: 12px;
+
+
+  color: #fdd835;
+
+
+  text-transform: uppercase;
+
+
+  letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+.contact-footer .contact-items {
+
+
+  display: flex;
+
+
+  flex-direction: column;
+
+
+  gap: 10px;
+
+
+  margin: 10px 0;
+
+
+  font-size: 17px;
+
+
+}
+
+
+
+
+
+.contact-footer .contact-items a {
+
+
+  color: #fff;
+
+
+  text-decoration: none;
+
+
+  padding: 8px;
+
+
+  border-radius: 5px;
+
+
+  transition: 0.3s ease;
+
+
+  border: 1px solid #444;
+
+
+}
+
+
+
+
+
+.contact-footer .contact-items a:hover {
+
+
+  background-color: #fdd835;
+
+
+  color: #000;
+
+
+  border-color: #fdd835;
+
+
+}
+
+
+
+
+
+.contact-footer .contact-items span {
+
+
+  font-weight: bold;
+
+
+}
+
+
+
+
+
+.contact-footer p {
+
+
+  margin-top: 15px;
+
+
+  font-size: 14px;
+
+
+  color: #aaa;
+
+
+}
+
+
+
+
+
+/* ===== NỀN TOÀN BÀI – PHÙ HỢP FOOTER ===== */
+
+
+body {
+
+
+  margin: 0;
+
+
+  min-height: 100vh;
+
+
+  font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+
+
+  background: linear-gradient(
+
+
+    180deg,
+
+
+    #1a1a1a 0%,
+
+
+    #1f1f1f 40%,
+
+
+    #222 100%
+
+
+  );
+
+
+  color: #f5f5f5;
+
+
+}
+
+
+
+
+
+main, section, .container {
+
+
+  background-color: #262626;
+
+
+  border-radius: 14px;
+
+
+  padding: 30px;
+
+
+  margin: 35px auto;
+
+
+  max-width: 1000px;
+
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+
+
+}
+
+
+
+
+
+h1, h2, h3 {
+
+
+  color: #fdd835;
+
+
+  letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+p, li {
+
+
+  font-size: 16px;
+line-height: 1.8;
+
+
+  color: #e0e0e0;
+
+
+}
+
+
+
+
+
+ /* ===== SỬA MÀU CHỮ CHO NỔI HƠN ===== */
+
+
+
+
+
+/* 1. Chữ thường trong đoạn văn */
+
+
+p, li {
+
+
+  color: #e6e6e6;
+
+
+}
+
+
+
+
+
+/* 2. Chữ nổi (bôi đậm trong bài) */
+
+
+strong, b {
+
+
+  color: #ffd700;
+
+
+}
+
+
+
+
+
+/* 3. Tiêu đề */
+
+
+h1 {
+
+
+  color: #ffd700;
+
+
+}
+
+
+
+
+
+h2 {
+
+
+  color: #fff176;
+
+
+}
+
+
+
+
+
+h3 {
+
+
+  color: #fdd835;
+
+
+}
+
+
+
+
+
+/* 4. Bóng chữ nhẹ để nổi nền */
+
+
+h1, h2, h3, strong {
+
+
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+
+
+}
+
+
+
+
+
+/* ===== DÒNG KHẨU HIỆU NỔI BẬT ===== */
+
+
+.slogan {
+
+
+  color: #ffd700;              /* vàng sáng – rất nổi */
+
+
+  font-size: 26px;             /* to hơn chữ thường */
+
+
+  font-weight: 800;            /* đậm */
+
+
+  text-align: center;
+
+
+  margin: 30px 0;
+
+
+  letter-spacing: 2px;
+
+
+  text-transform: uppercase;
+
+
+  text-shadow:
+
+
+    0 2px 6px rgba(0, 0, 0, 0.7),
+
+
+    0 0 12px rgba(255, 215, 0, 0.4);
+
+
+}
+
+
+
+
+
+/* ===== CHỮ NỘI DUNG LỚN HƠN ===== */
+
+
+
+
+
+/* Đoạn văn & danh sách */
+
+
+p, li {
+
+
+  font-size: 17.5px;   /* trước thường là 16px */
+
+
+  line-height: 1.85;
+
+
+  color: #e6e6e6;
+
+
+}
+
+
+
+
+
+/* ===== CHỮ 12A1 NỔI BẬT NHẤT ===== */
+
+
+.class-name {
+
+
+  font-size: 52px;              /* to nhất trang */
+
+
+  font-weight: 900;
+
+
+  color: #ff79c6;               /* hồng tím xinh */
+
+
+  text-align: center;
+
+
+  letter-spacing: 4px;
+
+
+  margin: 20px 0;
+
+
+
+
+
+  text-shadow:
+
+
+    0 4px 12px rgba(255, 121, 198, 0.6),
+
+
+    0 0 25px rgba(255, 121, 198, 0.4);
+
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+    <!-- MENU -->
+
+
+<div class="menu">
+
+
+<a onclick="showPage('media')">Audio & Video</a>
+
+
+
+
+
+
+
+
+    <div class="menu">
+
+
+        <a href="#home">Trang chủ</a>
+
+
+        <a href="#members">Thành viên</a>
+
+
+        <a href="#activities">Hoạt động lớp</a>
+
+
+    </div>
+
+
+
+
+
+    <!-- TRANG CHỦ -->
+
+
+    <section id="home">
+
+
+       <h1 class="class-name">12A1</h1>
+
+
+
+
+
+        <p class="slogan">Đoàn kết – Chăm ngoan – Học giỏi</p>
+
+
+
+
+
+        <img src="https://i.postimg.cc/ZRk5JFC0/IMG-20251121-052817.jpg" alt="Ảnh tập thể">
+
+
+
+
+
+        <p>
+
+
+            Lớp 12A1 là một tập thể năng động, đoàn kết và luôn tích cực
+
+
+            trong học tập cũng như các hoạt động phong trào của trường.
+
+
+        </p>
+
+
+  <section id="members">
+
+
+    <h2>Ban cán sự lớp</h2>
+
+
+
+
+
+    <div class="member">
+
+
+        <img src="https://i.postimg.cc/0QRTHVBG/IMG-20251213-125205.jpg" alt="Lớp trưởng">
+
+
+        <p><b>Bùi Đặng Hạ Vy</b><br>Lớp trưởng</p>
+
+
+    </div>
+
+
+
+
+
+    <div class="member">
+
+
+        <img src="https://i.postimg.cc/zvdP570K/Screenshot-2025-12-13-12-50-38-75-cd9f342f505fc08af23d5639700d5c03.jpg" alt="Lớp phó">
+
+
+        <p><b>Đinh Ngọc Trang Linh</b><br>Lớp phó</p>
+
+
+    </div>
+
+
+
+
+
+    <div class="member">
+
+
+        <img src="https://i.postimg.cc/6p41JdRZ/IMG-20251213-125137.jpg" alt="Tổ trưởng tổ 1">
+
+
+        <p><b>Trịnh Trúc Nhi</b><br>Tổ trưởng tổ 1</p>
+
+
+    </div>
+
+
+
+
+
+    <div class="member">
+<img src="https://i.postimg.cc/V6m7CphK/Screenshot-2025-12-13-12-54-04-56-cd9f342f505fc08af23d5639700d5c03.jpg" alt="Tổ trưởng tổ 2">
+
+
+        <p><b>Bùi Thế Duy</b><br>Tổ trưởng tổ 2</p>
+
+
+    </div>
+
+
+
+
+
+    <div class="member">
+
+
+        <img src="https://i.postimg.cc/kMjj2jvV/IMG-20251213-124509.jpg" alt="Tổ trưởng tổ 3">
+
+
+        <p><b>Trần Trí Dũng</b><br>Tổ trưởng tổ 3</p>
+
+
+    </div>
+
+
+
+
+
+    <div class="member">
+
+
+        <img src="https://i.postimg.cc/zf17s4qy/IMG-20251213-125153.jpg" alt="Tổ trưởng tổ 4">
+
+
+        <p><b>Trần Thị Như Phúc</b><br>Tổ trưởng tổ 4</p>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+    <!-- HOẠT ĐỘNG -->
+
+
+   <section id="activities">
+
+
+    <h2>Hoạt động lớp</h2>
+
+
+
+
+
+    <div>
+
+
+        <h3>🎁 Chào mừng ngày nhà giáo Việt Nam 20/11</h3>
+
+
+        <img src="https://i.postimg.cc/bNDRsqJS/IMG-20251213-125810.jpg" alt="CMNNGVN 20/11">
+
+
+        <p>Cả lớp tặng quà cho thầy,cô và chụp ảnh làm kỉ niệm.</p>
+
+
+    </div>
+
+
+
+
+
+    <div>
+
+
+        <h3>⚽ Hoạt động thể thao</h3>
+
+
+        <img src="https://i.postimg.cc/mrwY0DdC/IMG-20251213-115954.jpg" alt="Hoạt động thể thao">
+
+
+        <p>Tham gia giải bóng đá, bóng chuyền do nhà trường tổ chức.</p>
+
+
+    </div>
+
+
+
+
+
+    <div>
+
+
+        <h3>💐 20/10 </h3>
+
+
+        <img src="https://i.postimg.cc/mkc7zSbs/IMG-20251020-122347.jpg" alt="Hoạt động tình nguyện">
+
+
+        <p>Các bạn nam tổ chức ngày 20/10 cho các bạn nữ trong lớp.</p>
+
+
+    </div>
+
+
+</section>
+
+
+<footer class="contact-footer">
+
+
+  <div class="contact-content">
+
+
+    <h3>Thông tin liên hệ</h3>
+
+
+    <div class="contact-items">
+
+
+      <a href="mailto:example@gmail.com">
+
+
+        ✉️ Email: <span>22102008tn@gmail.com</span>
+
+
+      </a>
+
+
+      <a href="https://facebook.com/your.fb.profile" target="_blank">
+
+
+        👍 Facebook: <span>https://www.facebook.com/profile.php?id=100022792563010</span>
+
+
+      </a>
+
+
+      <a href="tel:+84123456789">
+
+
+        📞 Số điện thoại: <span> 0379023741</span>
+
+
+      </a>
+
+
+    </div>
+
+
+    <p class="copyright">© 2025 by Thanh Ngân</p>
+
+
+</div>
+
+
+<div id="media" class="page">
+
+
+    <h2>🎧🎬 Audio & Video AI</h2>
+
+
+
+
+
+    <h3>🎧 Audio chào mừng</h3>
+
+
+    <audio controls>
+
+
+        <source src="audio.mp3" type="audio/mpeg">
+
+
+    
+
+
+    </audio>
+
+
+
+
+
+    <br><br><br>
+
+
+
+
+
+    <h3>🎬 Video giới thiệu</h3>
+
+
+    <video width="720" controls>
+
+
+        <source src="nztvrr.mp4" type="video/mp4">
+
+
+    
+
+
+    </video>
+
+
+</div>
+
+
+
+
+
+  </div>
+
+
+</footer>
+
+
+</body>
+
+
+
+</html>
