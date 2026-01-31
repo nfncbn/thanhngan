@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Giới thiệu lớp 12A1</title>
+
+    <style>
+
+        body {font-family: Arial, sans-serif; background-color: #f4f6f8; margin: 0; }
+
+        .menu {background-color: #2c7be5; padding: 15px; position: sticky; top: 0;}
+
+        .menu a {color: white; margin: 0 15px; text-decoration: none; font-weight: bold; cursor: pointer;}
+
+        .menu a:hover { text-decoration: underline; }
+
+        .page {display: none; padding: 40px; text-align: center; }
+
+        .active {display: block;}
+
+         h1, h2 { color: #2c7be5; }
+
+        .slogan { font-style: italic;color: #555; }
+
+        .big-img { width: 80%; max-width: 900px; border-radius: 12px; margin: 20px 0;}
+
+        .members {display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; justify-items: center; margin-top: 30px;}
+
+        .member {width: 200px; margin: 20px;}
+
+        .member img {width: 100%; height: 200px; object-fit: cover; border-radius: 50%;}
+
+        .activity {margin-bottom: 50px;}
+
+        .activity img {width: 80%; max-width: 800px; border-radius: 10px;}
+
+
+
+
+
+
+
+/* ===== NỀN CHO TỪNG TRANG ===== */
+
+
+
+/* Trang chủ */
+
+#home {
+
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+
+  min-height: 100vh;
+
+  border-radius: 20px;
+
+}
+
+
+
+/* Thành viên */
+
+#members {
+
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+
+  min-height: 100vh;
+
+  border-radius: 20px;
+
+}
+
+
+
+/* Hoạt động */
+
+#activities {
+
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+
+  min-height: 100vh;
+
+  border-radius: 20px;
+
+}
+
+
+
+/* Hiệu ứng chuyển trang mượt */
+
+.page {
+
+  animation: fadeIn 0.6s ease;
+
+}
+
+
+
+@keyframes fadeIn {
+
+  from { opacity: 0; transform: translateY(15px); }
+
+  to   { opacity: 1; transform: translateY(0); }
+
+}
+
+
+
+/* ===== THÔNG TIN LIÊN HỆ ===== */
+
+.contact-footer {
+
+  margin-top: 60px;
+
+  padding: 30px;
+
+  background: #2c7be5;
+
+  color: white;
+
+  border-radius: 15px;
+
+}
+
+
+
+.contact-footer h3 {
+
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+
+}
+
+
+
+.contact-footer p {
+
+  margin: 8px 0;
+
+  font-size: 16px;
+
+}
+
+
+
+.contact-footer a {
+
+  color: #ffeb3b;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+
+
+/* ===== GIỮ CẤU TRÚC CHUYỂN TRANG ===== */
+
+.page {
+
+  display: none;
+
+  padding: 40px;
+
+  text-align: center;
+
+  min-height: 100vh;
+
+}
+
+
+
+.page.active {
+
+  display: block;
+
+  animation: fadePage 0.6s ease;
+
+}
+
+
+
+/* Hiệu ứng chuyển mượt */
+
+@keyframes fadePage {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(12px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+
+/* ===== NỀN RIÊNG TỪNG TRANG ===== */
+
+
+
+/* Trang chủ */
+
+#home {
+
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+
+}
+
+
+
+/* Thành viên */
+
+#members {
+
+  background: linear-gradient(135deg, #fde2e4, #f8bbd0);
+
+}
+
+
+
+/* Hoạt động */
+
+#activities {
+
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+
+}
+
+
+
+.contact-footer {
+
+  margin-top: 60px;
+
+  padding: 30px;
+
+  background: #2c7be5;
+
+  color: white;
+
+  border-radius: 15px;
+
+}
+
+.contact-footer a {
+color: #ffeb3b;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+}
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+     <div class="menu">
+
+<a onclick="showPage('media')">Audio & Video</a> 
+
+      <a onclick="showPage('home')">Trang chủ</a>
+
+        <a onclick="showPage('members')">Thành viên</a>
+
+        <a onclick="showPage('activities')">Hoạt động lớp</a>
+
+    </div>
+
+    <div id="home" class="page active">
+
+        <h1>Lớp 12A1</h1>
+
+        <p class="slogan">Đoàn kết – Chăm ngoan – Học giỏi</p>
+
+        <img class="big-img" src="https://i.postimg.cc/ZRk5JFC0/IMG-20251121-052817.jpg" alt="Ảnh tập thể">
+
+        <p>
+
+            Lớp 12A1 là một tập thể năng động, đoàn kết và luôn tích cực
+
+            trong học tập cũng như các hoạt động phong trào của trường.
+
+        </p>
+
+    </div>
+
+
+
+<div id="members" class="page">
+
+    <h2>Ban cán sự lớp</h2>
+
+   <div class="members">
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/DwsKhWbL/IMG-20251213-144834.jpg" alt="Lớp trưởng">
+
+        <p><b>Bùi Đặng Hạ Vy</b><br>Lớp trưởng</p>
+
+    </div>
+
+
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/VsVyb9q5/IMG-20251213-144910.jpg" alt="Lớp phó">
+
+        <p><b>Đinh Ngọc Trang Linh</b><br>Lớp phó</p>
+
+    </div>
+
+
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/435q4p4f/IMG-20251213-144805.jpg" alt="Tổ trưởng tổ 1">
+
+        <p><b>Trịnh Trúc Nhi</b><br>Tổ trưởng tổ 1</p>
+
+    </div>
+
+
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/Vv3HZRgT/IMG-20251213-144901.jpg" alt="Tổ trưởng tổ 2">
+
+        <p><b>Bùi Thế Duy</b><br>Tổ trưởng tổ 2</p>
+
+    </div>
+
+
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/RFhsM8Dv/IMG-20251213-145215.jpg" alt="Tổ trưởng tổ 3">
+
+        <p><b>Trần Trí Dũng</b><br>Tổ trưởng tổ 3</p>
+
+    </div>
+
+
+
+    <div class="member">
+
+        <img src="https://i.postimg.cc/zf17s4qy/IMG-20251213-125153.jpg" alt="Tổ trưởng tổ 4">
+
+        <p><b>Trần Thị Như Phúc</b><br>Tổ trưởng tổ 4</p>
+
+    </div>
+
+</div>
+
+</div>
+
+ <div id="activities" class="page">
+
+    <h2>Hoạt động lớp</h2>
+
+
+
+    <div class="activity">
+
+        <h3>🎁 Chào mừng ngày nhà giáo Việt Nam 20/11</h3>
+
+        <img src="https://i.postimg.cc/bNDRsqJS/IMG-20251213-125810.jpg" alt="CMNNGVN 20/11">
+
+        <p>Cả lớp tặng quà cho thầy,cô và chụp ảnh làm kỉ niệm.</p>
+
+    </div>
+
+
+
+    <div class="activity">
+
+        <h3>⚽ Hoạt động thể thao</h3>
+
+        <img src="https://i.postimg.cc/mrwY0DdC/IMG-20251213-115954.jpg" alt="Hoạt động thể thao">
+
+        <p>Tham gia giải bóng đá, bóng chuyền do nhà trường tổ chức.</p>
+
+    </div>
+
+
+
+    <div class="activity">
+
+        <h3>💐 20/10 </h3>
+
+        <img src="https://i.postimg.cc/mkc7zSbs/IMG-20251020-122347.jpg" alt="Hoạt động tình nguyện">
+		<p>Các bạn nam tổ chức ngày 20/10 cho các bạn nữ trong lớp.</p>
+
+    </div>
+
+</div>
+
+<div id="media" class="page">
+
+    <h2>🎧🎬 Audio & Video AI</h2>
+
+
+
+    <h3>🎧 Audio chào mừng</h3>
+    <audio controls>
+
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    <br><br><br>
+
+    <h3>🎬 Video giới thiệu</h3>
+
+    <video width="720" controls>
+
+        <source src="nztvrr.mp4" type="video/mp4">
+
+        
+
+    </video>
+
+<script>
+
+    function showPage(pageId) {var pages = document.getElementsByClassName("page"); for (var i = 0; i < pages.length; i++) 
+
+    {pages[i].classList.remove("active");} 
+
+    document.getElementById(pageId).classList.add("active"); }
+
+</script>
+
+<div class="contact-footer">
+
+    <h3>Thông tin liên hệ</h3>
+
+    <p>📧 Email: <a href="mailto:22102008tn@gmail.com">22102008tn@gmail.com</a></p>
+
+    <p>📞 SĐT: 0379 023 741</p>
+
+    <p>🔗 Facebook:
+
+      <a href="https://www.facebook.com/profile.php?id=100022792563010" target="_blank">
+
+        Thanh Ngân
+
+      </a>
+
+    </p>
+
+</div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>
